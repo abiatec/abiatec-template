@@ -1,0 +1,52 @@
+input[type=text],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=url],
+input[type=email], {
+	position: relative;
+}
+
+input[type=checkbox] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 2;
+
+	& + label {
+		&:before {
+			content: "";
+		}
+	}
+
+	&:checked + label {
+		&:before {
+
+		}
+	}
+}
+
+input[type=radio] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 2;
+
+	& + label {
+		&:before {
+			content: "";
+		}
+	}
+
+	&:checked + label {
+		&:before {
+
+		}
+	}
+}
+
+textarea {
+	position: relative;
+}

@@ -1,0 +1,13 @@
+nav(aria-label="Pagination")
+    ul.pagination.align-right
+        mixin paginationItem(href,text)
+            li
+                a(href=href)=text
+        li.current
+            span 1
+        +paginationItem('#',2)
+        +paginationItem('#',3)
+        +paginationItem('#',4)
+        +paginationItem('#',5)
+        li.ellipsis(aria-hidden="true")
+        +paginationItem('#',10)

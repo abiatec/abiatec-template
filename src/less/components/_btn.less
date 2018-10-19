@@ -1,0 +1,46 @@
+.btn {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0;
+	cursor: pointer;
+	z-index: 1;
+	border-radius: 0;
+	background: none;
+	transition: 0.25s ease;
+
+	&.disabled{
+		background: #d1d1d1;
+		background-color: #d1d1d1;
+		pointer-events: none;
+	}
+
+	&__size{
+
+		&--small{}
+
+		&--medium{}
+
+		&--large{}
+	}
+
+	&__color{
+
+		&--float{
+
+			&:hover{}
+		}
+
+		&--main{
+			color: @white;
+			background: @main;
+			background-color: @main;
+
+			&:hover{
+				background: @main--hover;
+				background-color: @main--hover;
+			}
+		}
+	}
+}
